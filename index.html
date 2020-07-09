@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport'
+      content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <title>Visma</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Contacts Book</h1>
+    </header>
+
+    <div class="table-container" id="tableContainer">
+        <div class="row">
+            <div class="column first-name">First name</div>
+            <div class="column last-name">Last name</div>
+            <div class="column date-of-birth">Date of birth</div>
+            <div class="column phone-number">Phone number</div>
+            <div class="column e-mail">E-mail</div>
+            <div class="column address">Address</div>
+            <div class="column add-new" id="addNewContact">+</div>
+        </div>
+        <div id="tBody"></div>
+    </div>
+
+    <form class="disable" id="newContactTable">
+        <h1 id="tableName">Add New Contact</h1>
+
+        <label for="newFirstName">First name</label>
+        <input type="text" id="newFirstName" maxlength="20" required>
+
+        <label for="newLastName">Last name</label>
+        <input type="text" id="newLastName" maxlength="30" required>
+
+        <label for="newDateOfBirth">Date of birth</label>
+        <input type="date" id="newDateOfBirth" required>
+
+        <label for="newPhoneNumber">Phone number</label>
+        <input type="number" id="newPhoneNumber" maxlength="20" required>
+
+        <label for="newEmail">E-mail</label>
+        <input type="email" id="newEmail" maxlength="30" required>
+
+        <label for="newAddress">Address</label>
+        <input type="text" id="newAddress" maxlength="40">
+
+        <button class="exit" id="newExit">Exit</button>
+        <input type="submit" class="submit" id="newSubmit">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
